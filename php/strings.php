@@ -64,4 +64,27 @@ var_dump(str_repeat("Ali", 5));
 
 var_dump(str_shuffle("ahmadi"));
 
+### str_word_count() => return the number of words in the string
+
+### strtok()
+
+var_dump(strtok("Ali Ahmadi", " "));
+
+### printf() function
+
+### stripos() & strpos() -> return the position of an string
+
+var_dump(stripos("This is a test message", "is"));
+
+### md5() function -> hashing
+
+### htmlentities()
+
+### html_entity_decode()
+
+### htmlspecialchars() & htmlspecialchars_decode()
+
+### strip_tags()
+
+
 ?>
