@@ -26,4 +26,42 @@ var_dump(ucwords("i am from iran"));
 
 var_dump(strtolower("ALI"));
 
+
+### trim() for delete whitespaces in start and end of an string
+    // ltrim() & rtrim()
+
+$str = "     this text have whitespace in start and end     ";
+var_dump(trim($str));
+
+
+### nl2br() -> convert newline in code to <br> in html
+
+var_dump("hello\nwellcome");
+
+### number_format() function
+
+//
+
+### explode() function
+
+print_r(explode("/", "ali/zaynab")); // convert this string to an array base on seprator
+
+### implode() function can use for convert an array to string
+
+### substr() function 
+
+var_dump(substr("this is world", 5, 4));
+
+### strstr() function
+
+### str_replace() 
+
+### str_repeat() => repeat and concat string to each other
+
+var_dump(str_repeat("Ali", 5));
+
+### str_shuffle() 
+
+var_dump(str_shuffle("ahmadi"));
+
 ?>
