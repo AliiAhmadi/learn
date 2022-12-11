@@ -60,8 +60,44 @@ echo array_sum([1, 2, 3, 4, 5]);
 
 echo array_rand($arr);
 
+### array_chunk()
+
+show(array_chunk($arr, 2));
+
+### array_merge() => pass two array and add them to each other and create an array
+
+show(array_merge([1, 2, 3], [4, 5, 6]));
+
+### array_unique()
+
+show(array_unique([1, 1, 1, 1, 1])); // result will be [1]
+
+### array_reverse() function
+
+echo array_search("ali", [
+    "name" => "ali",
+    "family" => "ahmadi",
+    "age" => 20
+]); // result = "name"
+
+### array_diff() function
+
+### array_slice() function
+
+### array_splice() function
+$firstArray = [1, 2, 3, 4, 5];
+$SecondArray = [6, 7, 8, 9, 10];
+array_splice($firstArray, 1, 0, $SecondArray);
+show($firstArray);
+
+### array_shift() => delete first item from an array and return it.
+### array_unshift() => add one item in index 0 
+### array_push() => add items at the end of array
+### array_pop() => remove last item from array
 
 
+### array_fill(firstIndex, NumberOfElements, Value)
 
+show(array_fill(2, 4, "Ali"));
 
 ?>
