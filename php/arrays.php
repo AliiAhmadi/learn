@@ -100,4 +100,42 @@ show($firstArray);
 
 show(array_fill(2, 4, "Ali"));
 
+
+### array_filter() function
+
+$result = array_filter([1, 2, 3, 4, 5], function ($value){
+    return $value % 2 == 0;
+});
+
+show($result);
+
+
+### compact() function
+
+
+$num1 = 10;
+$num2 = 30;
+$num3 = 80;
+
+$result = compact("num1", "num2", "num3");
+
+show($result);
+
+### extract() function
+
+extract([
+    "name" => "ali",
+    "family" => "ahmadi",
+    "age" => 20
+]);
+
+/*
+    # the result of above code like this:
+        $name = "ali";
+        $family = "ahmadi";
+        $age = 20;
+*/
+
+
+
 ?>
