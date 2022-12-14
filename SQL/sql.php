@@ -82,3 +82,18 @@
 //      FOREIGN KEY
 //      CHECK
 //      DEFAULT
+
+// delete a table
+"DROP TABLE users";
+
+// clear a table
+"TRUNCATE TABLE users";
+
+// add a column
+"ALTER TABLE users ADD age int";
+
+// delete a column
+"ALTER TABLE users DROP COLUMN age";
+
+// modify columns
+"ALTER TABLE users MODIFY COLUMN age bigint";
