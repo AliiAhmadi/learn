@@ -16,20 +16,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         isset($_POST["age"]) &&
         !empty($_POST["firstname"]) &&
         !empty($_POST["lastname"]) &&
-        !empty($_POST["age"]) &&
-        isset($_POST["submit"])
+        !empty($_POST["age"])
     ) {
         $connection = new mysqli("localhost", "root", "", "w3school");
         $firstName = $_POST["firstname"];
         $lastName = $_POST["lastname"];
         $age = $_POST["age"];
-        $query = "INSERT INTO test(age, first_name, last_name) VALUES ({(int) $age}, {$firstName}, {$lastName});";
-        $result = $connection->query($query);
-        if (!$connection->errno) {
-            echo "OkK";
+        $query = "INSERT INTO test(age, first_name, last_name) VALUES (?, ?, ?);";
+        $stmt = $connection->prepare($query);
+        $stmt->bind_param("iss", $age, $firstName, $lastName);
+        $result = $stmt->execute();
+        if ($result) {
+            echo "OKK";
         } else {
-            echo "ERROR";
+            echo "Error";
         }
+        $stmt->close();
     }
 }
 
