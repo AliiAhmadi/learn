@@ -72,10 +72,12 @@ $newUsers = [
 ];
 $stmt = $db->prepare($query);
 
+
+$db->beginTransaction();
 foreach ($newUsers as $user) {
     $stmt->execute(["age" => $user["age"], "first_name" => $user["name"], "last_name" => $user["family"]]);
 }
-
+$db->commit();
 
 // +----+------+------------+-----------+
 // | id | age  | first_name | last_name |
