@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("iss", $age, $firstName, $lastName);
         $result = $stmt->execute();
         if ($result) {
-            echo "OKK";
+            echo "OKK! -> " . $stmt->insert_id;
         } else {
             echo "Error";
         }
