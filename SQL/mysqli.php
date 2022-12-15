@@ -16,9 +16,10 @@ $mysqli->set_charset("utf8");
 
 
 // print_r($mysqli);
+
 $query = "
 CREATE TABLE test(
-    id int(10) NOT NULL PRIMARY KEY,
+    id int(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
     age int,
     first_name varchar(32) NOT NULL,
     last_name varchar(32) NOT NULL
