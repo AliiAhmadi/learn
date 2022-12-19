@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>AJAX Request</title>
+  </head>
+  <body>
+    <button id="ajax-btn">Send</button>
+    <div>
+      <p id="result"></p>
+    </div>
+    <script>
+      $(document).ready(function () {
+        let button = $("#ajax-btn");
+        let result = $("#result");
+        button.click(function (e) {
+          //   alert("clicked");
+          //   console.log("clicked");
+          $.ajax({
+            url: "http://localhost:2323/ajax/handler.php",
+            method: "GET",
+            success: function (response) {
+              res = JSON.parse(response);
+              console.log(res);
+              result.html(response);
+            },
+            error: function (response) {
+              console.log(response);
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
