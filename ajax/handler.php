@@ -1,6 +1,17 @@
 <?php
 
-echo json_encode([
-    "name" => "ali",
-    "family" => "ahmadi"
-]);
+$words = [
+    "php",
+    "alax",
+    "python",
+    "javascript",
+    "get",
+    "handler",
+    "cloze",
+    "www",
+    "ali",
+    "reza",
+    "ahmad",
+    "akbar",
+    "ahmadi"
+];
