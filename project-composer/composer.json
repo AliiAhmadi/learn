@@ -1,0 +1,16 @@
+{
+    "name": "max/project-composer",
+    "type": "library",
+    "require": {
+        "fakerphp/faker": "2.x-dev",
+        "ircmaxell/random-lib": "^1.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AliiAhmadi",
+            "email": "aliahmadi.github@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

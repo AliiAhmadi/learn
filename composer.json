@@ -1,0 +1,24 @@
+{
+    "name": "max/learn",
+    "description": "a test project with composer",
+    "type": "project",
+    "require": {
+        "sadegh19b/laravel-persian-validation": "dev-master"
+    },
+    "require-dev": {
+        "fakerphp/faker": "2.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Max\\Learn\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AliiAhmadi",
+            "email": "aliahmadi.github@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
