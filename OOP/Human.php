@@ -35,3 +35,11 @@ class Human
 }
 
 $me = new Human();
+
+// public
+// private
+// protected
+
+
+// constructor
+// destructor
