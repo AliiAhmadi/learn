@@ -92,3 +92,28 @@ class Line
         return new Line($this->getFirstPoint(), $this->getSecondPoint());
     }
 }
+
+
+// Encapsulation
+
+
+
+class User
+{
+    private string $username;
+    private int $id;
+    private string $joined_at;
+    private string $email;
+    private string $phone;
+    private array $courses;
+    private string $password;
+
+    public function __construct(string $username, string $email, string $password)
+    {
+        $this->email = $email;
+        $this->username = $username;
+        $this->password = $password;
+    }
+}
+
+// Inheritance
