@@ -23,4 +23,8 @@ class Url
         $segments = explode("/", $url);
         return $segments;
     }
+
+    public function __clone()
+    {
+    }
 }
